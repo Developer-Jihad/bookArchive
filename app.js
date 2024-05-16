@@ -29,6 +29,8 @@ const searchBook = () => {
 
     const loadingSpinner = document.getElementById("loading-spinner");
     loadingSpinner.style.display = "block";
+    const image = document.getElementById("image");
+    image.style.display = "none";
 
     // Load Data
     const url = `https://openlibrary.org/search.json?q=${searchText}`;
