@@ -2,10 +2,70 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Book Archive</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
   </head>
-  <body>
-    <h1>Hello</h1>
+
+  <body class="bg-black">
+    <div>
+      <h3 class="text-center text-success w-75 mx-auto mt-4">
+        Search Best Books for You !!
+      </h3>
+      <br />
+
+      <!-- Books Search Area  -->
+      <div class="input-group mb-3 w-75 mx-auto">
+        <input
+          id="search-field"
+          type="text"
+          class="form-control"
+          placeholder="Search Your Favourite Books"
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+        />
+        <button
+          onclick="searchBook()"
+          class="btn text-success fw-bold btn-outline-secondary"
+          type="button"
+          id="button-search"
+        >
+          SEARCH
+        </button>
+      </div>
+      <p id="search-item" class="text-center text-success"></p>
+    </div>
+
+    <div id="loading-spinner" class="spinner" style="display: none"></div>
+
+    <!-- Books Search Results -->
+    <h6 id="search-warning" class="text-center text-warning mt-4"></h6>
+
+    <div
+      id="serch-result"
+      class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mx-2 sm:mx-4"
+    ></div>
+
+    <br /><br /><br />
+
+    <footer class="position-fixed bottom-0 start-50 translate-middle">
+      Copyright &#169; 2024 | All Rights Reserved by
+      <a
+        class="text-decoration-none text-success fw-bold"
+        target="_blank"
+        href="https://www.linkedin.com/in/developer-jihad/"
+        >Md Jihad Hossain</a
+      >
+    </footer>
+
+    <!-- <script src="app.js"></script> -->
+    <script src="app.js"></script>
   </body>
 </html>
