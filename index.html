@@ -15,7 +15,7 @@
   </head>
 
   <body class="bg-black">
-    <div>
+    <header>
       <h3 class="text-center text-success w-75 mx-auto mt-4">
         Search Best Books for You !!
       </h3>
@@ -41,21 +41,23 @@
         </button>
       </div>
       <p id="search-item" class="text-center text-success"></p>
-    </div>
+    </header>
 
     <div id="loading-spinner" class="spinner" style="display: none"></div>
 
     <!-- Books Search Results -->
     <h6 id="search-warning" class="text-center text-warning mt-4"></h6>
 
-    <div
+    <main
       id="serch-result"
       class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mx-2 sm:mx-4"
-    ></div>
+    ></main>
 
     <br /><br /><br />
 
-    <footer class="position-fixed bottom-0 start-50 translate-middle">
+    <footer
+      class="position-fixed w-75 text-center bottom-0 start-50 translate-middle"
+    >
       Copyright &#169; 2024 | All Rights Reserved by
       <a
         class="text-decoration-none text-success fw-bold"

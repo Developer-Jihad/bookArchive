@@ -26,6 +26,7 @@ const searchBook = () => {
     searchWarning.appendChild(h6);
   } else {
     // Show Loading Spinner
+
     const loadingSpinner = document.getElementById("loading-spinner");
     loadingSpinner.style.display = "block";
 
